@@ -3,25 +3,19 @@ package me.wolflie.config.example.config;
 import me.wolflie.config.annotation.ConfigKey;
 import me.wolflie.config.annotation.ConfigSection;
 
+
 public class ExampleConfigHook {
 
+
     @ConfigKey("one")
-    public static final String ONE;
-
-    static {
-        ONE = "HI!";
-    }
-
+    public static String one = "one";
     @ConfigSection("two")
     public static class TwoSection {
 
         @ConfigKey("three")
-        public static final String THREE;
+        public static int three = 3;
 
-
-        static {
-            THREE = "OH, HI THERE!";
-        }
     }
+
 
 }

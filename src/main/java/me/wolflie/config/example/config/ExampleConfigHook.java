@@ -6,9 +6,9 @@ import me.wolflie.config.annotation.ConfigSection;
 
 public class ExampleConfigHook {
 
-
     @ConfigKey("one")
     public static String one = "one";
+
     @ConfigSection("two")
     public static class TwoSection {
 
@@ -16,6 +16,4 @@ public class ExampleConfigHook {
         public static int three = 3;
 
     }
-
-
 }

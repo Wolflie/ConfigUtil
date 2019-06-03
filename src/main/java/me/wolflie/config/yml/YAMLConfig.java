@@ -46,7 +46,6 @@ public class YAMLConfig extends YamlConfiguration implements Config {
     @Override
     public void updateHook(Object hook) {
         ConfigHookUtil.initializeHook(hook, this);
-        save();
     }
 
 
